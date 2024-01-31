@@ -1,6 +1,6 @@
 const OpenTok = require("opentok");
-const apiKey = "ef4a56b021dab421d337f97a69b42b08babe08a3";
-const apiSecret = "47852881";
+const apiKey = process.env.VIDEO_API_API_KEY;
+const apiSecret = process.env.VIDEO_API_API_SECRET;
 if (!apiKey || !apiSecret) {
   throw new Error(
     "Missing config values for env params OT_API_KEY and OT_API_SECRET"
